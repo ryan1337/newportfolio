@@ -81,7 +81,8 @@ a {
 }
 
 .navul, .navli , .nava {
-	display: inline-block;
+	display: flex;
+    justify-content: space-around;
 	margin-top: 0;
 	transition : color 0.8s ease-in-out;
 	padding: 0 5px;
@@ -89,7 +90,7 @@ a {
 
 .navbar {
 	background-color: black;
-	opacity: 0.8;
+    /*opacity: 0.8;*/
 	top: 0px;
 	line-height: 2.5;
 	height: 50px;
@@ -110,6 +111,8 @@ header {
 		margin-top: 0;
 		padding-top: 0;
 		color: white;
+        font-size: 22px;
+        font-family: 'Indie Flower', cursive;
 }
 
 
@@ -132,7 +135,7 @@ header {
 }
 
 h3 {
-		color: black;
+		color: #313634 ;
 }
 
 .projet-p {
@@ -227,6 +230,7 @@ h3 {
 h2 {
 		text-align: center;
 		margin: 100px auto;
+        color: #313634;
 }
 
 .container-contact {
@@ -240,10 +244,15 @@ h2 {
 
 .page-footer {
 		background-color: #941515!important;
+        margin-top: 80px!important;
 }
 
 .footer-copyright {
 		background-color: #5C0402!important;
+}
+
+.logo-nav {
+    width: 3.5%;
 }
 
 /* ==========================================================================
@@ -280,12 +289,18 @@ h2 {
 		}
 
 		.descriptionc {
-				height: 100px;
-				line-height: 2.5;
+				height: 300px;
+				line-height: 3.3;
+                text-align: center;
 		}
 }	
 
 @media screen and (min-width: 1024px) {
+    .art-projet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* ==========================================================================
